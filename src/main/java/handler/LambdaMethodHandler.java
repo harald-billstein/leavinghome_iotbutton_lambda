@@ -17,8 +17,8 @@ import model.SonosResponseBody;
 public class LambdaMethodHandler implements RequestHandler<IotButtonParameters, String> {
 
   public static LambdaLogger logger;
-  private String username = "user";
-  private String password = "password";
+  private String username = "";
+  private String password = "";
 
   public String handleRequest(IotButtonParameters input, Context context) {
     logger = context.getLogger();
